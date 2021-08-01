@@ -1,0 +1,24 @@
+title: Projects
+
+sections:
+  description:
+    type: fields
+    fields:
+      intro:
+        label: Εισαγωγικό κείμενο
+        type: textarea
+        size: small
+        buttons: false
+
+  projects_drafts:
+    headline: Projects (προσχέδια)
+    type: pages
+    templates: project
+    status: draft
+
+  projects:
+    headline: Projects
+    type: pages
+    templates: project
+    status: published
+    limit: 50

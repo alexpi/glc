@@ -1,0 +1,6 @@
+title: Photo
+
+fields:
+  alt:
+    label: Alternative text
+    type: text

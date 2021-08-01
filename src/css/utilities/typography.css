@@ -1,0 +1,73 @@
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.t-2 {
+  font-size: var(--step--2);
+}
+
+.t-1 {
+  font-size: var(--step--1);
+}
+
+.t0 {
+  font-size: var(--step-0);
+}
+
+.t0,
+.t1 {
+  letter-spacing: -0.02em;
+}
+
+.t1 {
+  font-size: var(--step-1);
+}
+
+.t2 {
+  font-size: var(--step-2);
+  letter-spacing: -0.02em;
+}
+
+.t2,
+.t3 {
+  line-height: 1.1;
+}
+
+.t3 {
+  font-size: var(--step-3);
+}
+
+.t3,
+.t4 {
+  letter-spacing: -0.01em;
+}
+
+.t4 {
+  font-size: var(--step-4);
+  line-height: 1.05;
+}
+
+.t5 {
+  font-size: var(--step-5);
+}
+
+.t5,
+.t6 {
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.t6 {
+  font-size: var(--step-6);
+}
+
+.bold {
+  font-family: var(--font-main-bold);
+}

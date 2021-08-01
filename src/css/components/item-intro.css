@@ -1,0 +1,29 @@
+.item-intro .description {
+  margin-top: var(--space-m);
+  max-width: 50ch;
+}
+
+.item-intro .data {
+  --margin: var(--space-l-xl);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: var(--space-l-xl);
+  max-width: 96ch;
+}
+
+.item-intro .data div {
+  margin-bottom: var(--space-s);
+  margin-right: var(--margin);
+}
+
+.item-intro dd {
+  margin-top: var(--space-2xs);
+}
+
+@media (min-width: 960px) {
+  .item-intro {
+    grid-column: 2;
+  }
+}

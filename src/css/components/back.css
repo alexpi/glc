@@ -1,0 +1,29 @@
+.back {
+  bottom: var(--main-padding-inline);
+  display: flex;
+  height: auto;
+  place-content: center;
+  position: fixed;
+  right: var(--main-padding-inline);
+  transform: translateY(250%);
+  transition: transform 0.5s ease 0.15s;
+  width: auto;
+  z-index: var(--z50);
+}
+
+.back[data-visible] {
+  transform: translateY(0);
+}
+
+.back span {
+  border-bottom: 3px solid var(--color-primary);
+  text-transform: uppercase;
+}
+
+@media (min-width: 960px) {
+  .back span {
+    border: 3px solid var(--color-primary);
+    border-radius: 100%;
+    padding: var(--space-m) calc(var(--space-xs) * 1.2);
+  }
+}

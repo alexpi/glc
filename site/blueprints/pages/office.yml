@@ -1,0 +1,87 @@
+title: Office
+
+sections:
+  general:
+    type: fields
+    fields:
+      headline_about:
+        label: About
+        type: headline
+        numbered: false
+
+      about:
+        label: Σχετικά με το γραφείο
+        type: textarea
+        size: small
+        buttons: false
+        width: 1/2
+
+      expertise:
+        label: Εξειδίκευση
+        type: textarea
+        size: small
+        buttons: false
+        width: 1/2
+
+      photo:
+        label: Φωτογραφία γραφείου
+        type: files
+        max: 1
+        width: 1/2
+
+      services:
+        label: Υπηρεσίες
+        type: structure
+        fields:
+          service:
+            label: Υπηρεσία
+            type: text
+          description:
+            label: Περιγραφή
+            type: text
+            buttons: false
+  team:
+    type: fields
+    fields:
+      headline_team:
+          label: Ομάδα
+          type: headline
+          numbered: false
+
+      team:
+        label: Ομάδα
+        type: structure
+        fields:
+          name:
+            label: Ονοματεπώνυμο
+            type: text
+            width: 1/3
+          role:
+            label: Ρόλος
+            type: text
+            width: 1/3
+          photo:
+            label: Φωτογραφία
+            type: files
+            max: 1
+            width: 1/3
+
+  contact:
+    type: fields
+    fields:
+      headline_contact:
+          label: Επικοινωνία
+          type: headline
+          numbered: false
+
+      contact_headline:
+        label: Επικεφαλίδα επικοινωνίας
+        type: text
+        width: 1/2
+
+      contact_text:
+        label: Κείμενο επικοινωνίας
+        type: textarea
+        size: small
+        buttons: false
+        width: 1/2

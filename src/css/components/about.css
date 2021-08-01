@@ -1,0 +1,9 @@
+.about img {
+  margin-top: var(--space-xl-2xl);
+}
+
+@media (min-width: 960px) {
+  .about {
+    grid-column: 1;
+  }
+}

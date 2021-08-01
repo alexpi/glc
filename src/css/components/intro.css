@@ -1,0 +1,24 @@
+.intro {
+  background: var(--color-light);
+  display: grid;
+  height: 100vh;
+  left: 0;
+  place-content: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: var(--z1000);
+}
+
+.intro .graphic {
+  stroke: var(--color-primary);
+  stroke-width: 20px;
+  opacity: 0;
+  width: 80vw;
+}
+
+@media (min-width: 760px) {
+  .intro .graphic {
+    width: 50vw;
+  }
+}

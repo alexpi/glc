@@ -1,0 +1,48 @@
+title: Object
+
+sections:
+  information:
+    type: fields
+    fields:
+      featured_photo:
+        label: Φωτογραφία
+        help: Η φωτογραφία που θα φαίνεται στην εξωτερική σελίδα
+        type: files
+        max: 1
+        required: true
+        width: 1/2
+
+      intro:
+        label: Εισαγωγικό κείμενο
+        type: textarea
+        size: medium
+        buttons: false
+        width: 1/2
+
+      category:
+        label: Είδος
+        type: tags
+        options: query
+        query: page.parent.children.pluck("category", ",", true)
+        width: 1/2
+
+  content:
+    type: fields
+    fields:
+      main_content:
+        label: Περιεχόμενο
+        type: blocks
+        fieldsets:
+          image:
+            extends: blocks/image
+            fields:
+              width:
+                label: Image width
+                type: select
+                options:
+                  full: Full width
+                  normal: Normal
+                  small: Small
+                default: normal
+          - text
+          - gallery

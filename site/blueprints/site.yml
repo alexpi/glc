@@ -1,0 +1,101 @@
+title: Site
+
+tabs:
+  content:
+    label: Περιεχομενο
+    icon: text
+
+    sections:
+      pages:
+        headline: Σελίδες
+        type: pages
+        templates:
+          - projects
+          - objects
+          - office
+          - maintenance
+        status: published
+
+      projects_drafts:
+        headline: Projects (προσχέδια)
+        type: pages
+        templates: project
+        parent: site.find("projects")
+        status: draft
+        limit: 10
+
+      projects:
+        headline: Projects
+        type: pages
+        templates: project
+        parent: site.find("projects")
+        status: published
+        limit: 10
+
+      objects_drafts:
+        headline: Αντικείμενα (προσχέδια)
+        type: pages
+        templates: object
+        parent: site.find("objects")
+        status: draft
+        limit: 10
+
+      objects:
+        headline: Αντικείμενα
+        type: pages
+        templates: object
+        parent: site.find("objects")
+        status: published
+        limit: 10
+
+  information:
+    label: Πληροφοριες
+    icon: map
+
+    fields:
+      info:
+        label: Πληροφορίες
+        type: headline
+        numbered: false
+      email:
+        label: Email
+        type: email
+        width: 1/2
+      phone:
+        label: Τηλέφωνο
+        type: tel
+        width: 1/2
+      address:
+        label: Διεύθυνση
+        type: text
+        width: 1/2
+      google_map:
+        label: Θέση στο χάρτη (google map)
+        type: url
+        width: 1/2
+
+      social:
+        label: Social media
+        type: headline
+        numbered: false
+      facebook:
+        label: Facebook
+        type: url
+        width: 1/2
+      instagram:
+        label: Instagram
+        type: url
+        width: 1/2
+
+  metatags:
+    label: Metatags
+    icon: code
+
+    fields:
+      social_image:
+        label: Εικόνα social media
+        help: 'Η εικόνα που θα φαίνεται στην κοινοποίηση (Μέγεθος: 1200×628)'
+        type: files
+        max: 1
+        layout: cards
+        size: medium

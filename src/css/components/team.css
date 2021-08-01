@@ -1,0 +1,25 @@
+.team {
+  margin-top: var(--space-m-4xl);
+}
+
+.team .content {
+  grid-column-gap: var(--space-m-xl);
+  grid-row-gap: var(--space-l-2xl);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: var(--space-m-xl);
+}
+
+.person .info {
+  margin-top: var(--space-2xs);
+}
+
+.person .role {
+  margin-top: var(--space-4xs);
+}
+
+@media (min-width: 1600px) {
+  .team .content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

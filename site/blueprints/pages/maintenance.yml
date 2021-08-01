@@ -1,0 +1,15 @@
+title: Maintenance
+
+fields:
+  heading:
+    label: Επικεφαλίδα
+    type: text
+
+  text:
+    label: Κείμενο
+    type: textarea
+    size: small
+
+  active:
+    label: Maintenance mode
+    type: toggle
