@@ -59,9 +59,16 @@
     <?php endif ?>
 
     <header class="header" data-element="header">
-      <a href="/" class="logo" data-element="logo">
-        <img src="<?= url('assets/logo.svg') ?>" width="197" height="178" alt="GLC & Partners logo">
-      </a>
+      <div class="logo-container">
+        <a href="/" class="logo" data-element="logo">
+          <img src="<?= url('assets/logo.svg') ?>" width="197" height="178" alt="GLC & Partners logo">
+        </a>
+
+        <a class="espa" href="<?= url('assets/glc.pdf') ?>" target="_blank" rel="noopener noreferrer">
+          <img src="<?= url('assets/espa.jpg') ?>" alt="ESPA graphic">
+        </a>
+      </div>
+      
 
       <nav class="nav" role="navigation" data-element="nav" data-nav-state="closed">
         <button type="button" class="nav-toggle" data-element="toggle">
